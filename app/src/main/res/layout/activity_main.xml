@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/dark_gray"
     tools:context=".MainActivity"
     android:orientation="vertical">
 
@@ -12,7 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        android:background="@color/dark_gray"
+        android:background="@android:color/transparent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
         tools:listitem="@layout/workout" />
 
 </RelativeLayout>
