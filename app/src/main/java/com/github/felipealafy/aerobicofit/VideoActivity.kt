@@ -1,6 +1,6 @@
 package com.github.felipealafy.aerobicofit
 
-import android.net.Uri
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.github.felipealafy.aerobicofit.databinding.ActivityVideoBinding
@@ -31,7 +31,11 @@ class VideoActivity : AppCompatActivity() {
             binding.videoTitle.text = video.title
             binding.videoDescription.text = video.desc
         }
-    }
 
-    private fun String.getURI() = Uri.parse(this)
+        binding.goToTimerView.setOnClickListener {
+            val intent = Intent(this, ExerciseActivity::class.java)
+            intent.putExtra("Video", video)
+            startActivity(intent)
+        }
+    }
 }

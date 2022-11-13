@@ -3,12 +3,9 @@ package com.github.felipealafy.aerobicofit
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.github.felipealafy.aerobicofit.databinding.ActivityMainBinding
-import com.github.felipealafy.aerobicofit.model.FakeVideoList
+import com.github.felipealafy.aerobicofit.model.Videos
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -17,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val workoutsAdapter = WorkoutsAdapter(FakeVideoList().getListOfFakeVideos())
+        val workoutsAdapter = WorkoutsAdapter(Videos().getListOfVideos())
         workoutView = binding.workouts
         workoutView.adapter = workoutsAdapter
 
