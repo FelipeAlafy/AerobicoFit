@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aerobico Fit</string>
+    <string name="next"><![CDATA[>]]></string>
+    <string name="start">começar</string>
+    <string name="go_to_timer">"Monitar seu exercício <![CDATA[>]]> "</string>
+    <string name="pause">Pausar</string>
+    <string name="resume">Retomar</string>
+    <string name="end_sets">Parabéns você terminou suas séries.</string>
+    <string name="rest">Hora de descansar,</string>
+    <string name="set">Série</string>
+    <string name="set_delimiter">de</string>
+</resources>

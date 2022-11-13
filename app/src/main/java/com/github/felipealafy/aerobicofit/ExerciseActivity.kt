@@ -30,12 +30,9 @@ class ExerciseActivity : AppCompatActivity() {
         limitSets = video.limitSets
         timeRemaining = video.setTime
         updateUi()
-        if (exerciseState == ExerciseState.FREETIME) {
-            goToExercise()
-            binding.exerciseStatus.text = getSetString()
-        } else {
-            goToFreeTime()
-        }
+
+        goToExercise()
+        binding.exerciseStatus.text = getSetString()
 
         binding.start.setOnClickListener {
             if (state == TimerState.PAUSED || state == TimerState.STOPPED) {
@@ -55,15 +52,14 @@ class ExerciseActivity : AppCompatActivity() {
 
         override fun onFinish() {
             state = TimerState.STOPPED
+            if (currentSet == limitSets) onFinishTimer()
             if (exerciseState == ExerciseState.FREETIME && currentSet <= limitSets) {
-                goToExercise()
                 currentSet++
                 binding.exerciseStatus.text = getSetString()
+                goToExercise()
             } else if (exerciseState == ExerciseState.RUNNING && currentSet < limitSets) {
                 goToFreeTime()
             }
-
-            if (currentSet == limitSets) onFinishTimer()
         }
     }
 
@@ -81,7 +77,6 @@ class ExerciseActivity : AppCompatActivity() {
 
     private fun onFinishTimer() {
         state = TimerState.STOPPED
-        cd.onFinish()
         Toast.makeText(this, getString(R.string.end_sets), Toast.LENGTH_SHORT).show()
     }
 
