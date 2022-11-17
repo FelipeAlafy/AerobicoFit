@@ -3,7 +3,7 @@ package com.github.felipealafy.aerobicofit.model
 import android.os.Parcel
 import android.os.Parcelable
 
-data class Video(var title: String, var link: String, var desc: String, var limitSets: Int, var setTime: Long, var restTime: Long): Parcelable {
+data class Video(var title: String, var link: String, var desc: String = "", var limitSets: Int = 4, var setTime: Long = 40000, var restTime: Long = 20000): Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString()!!,
         parcel.readString()!!,
