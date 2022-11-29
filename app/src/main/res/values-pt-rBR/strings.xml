@@ -10,4 +10,9 @@
     <string name="rest">Hora de descansar,</string>
     <string name="set">Série</string>
     <string name="set_delimiter">de</string>
+    <string name="save">Salvar</string>
+    <string name="amount_of_sets">Quantas Séries?</string>
+    <string name="rest_timer_length">Duração do descanso</string>
+    <string name="exercise_timer_length">Duração do exercício</string>
+    <string name="ended_description">Veja o código fonte no <a href="https://github.com/FelipeAlafy/AerobicoFit">Github</a>\nWendry no <a href="https://instagram.com/wendrylcds?igshid=NTdlMDg3MTY=">instagram</a>\nKauan no <a href="https://instagram.com/kauan_naves_gym?igshid=NTdlMDg3MTY=">instagram</a>\nYankee no <a href="https://instagram.com/yankee_mm0?igshid=NTdlMDg3MTY=">instagram</a>\nFelipe no <a href="https://github.com/FelipeAlafy">Github</a>\nGustavo no <a href="https://instagram.com/_guto_anjos_?igshid=NTdlMDg3MTY=">Instagram</a></string>
 </resources>

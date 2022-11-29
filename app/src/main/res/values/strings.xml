@@ -9,4 +9,9 @@
     <string name="rest">Rest</string>
     <string name="set">Set</string>
     <string name="set_delimiter">of</string>
+    <string name="save">Save</string>
+    <string name="amount_of_sets">Amount of sets</string>
+    <string name="rest_timer_length">Rest Timer Length</string>
+    <string name="exercise_timer_length">Exercise Timer Length</string>
+    <string name="ended_description">Veja o código fonte no <a href="https://github.com/FelipeAlafy/AerobicoFit">Github</a>\nWendry no <a href="https://instagram.com/wendrylcds?igshid=NTdlMDg3MTY=">instagram</a>\nKauan no <a href="https://instagram.com/kauan_naves_gym?igshid=NTdlMDg3MTY=">instagram</a>\nYankee no <a href="https://instagram.com/yankee_mm0?igshid=NTdlMDg3MTY=">instagram</a>\nFelipe no <a href="https://github.com/FelipeAlafy">Github</a>\nGustavo no <a href="https://instagram.com/_guto_anjos_?igshid=NTdlMDg3MTY=">Instagram</a></string>
 </resources>

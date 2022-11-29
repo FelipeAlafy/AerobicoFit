@@ -15,8 +15,11 @@ class VideoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityVideoBinding.inflate(layoutInflater)
-
         setContentView(binding.root)
+        setSupportActionBar(binding.toolbar.root)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         val video = intent.getParcelableExtra<Video>("Video")
         if (video != null) {
             val videoView = binding.videoView
